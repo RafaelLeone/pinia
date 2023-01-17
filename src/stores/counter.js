@@ -2,8 +2,8 @@ import { defineStore } from "pinia";
 
 export const useCounterStore = defineStore("counter",  {
     state: () => ({
-        count: 10,
-        heroLevel: 1,
+        count: localStorage.count ? localStorage.count : 10,
+        heroLevel: localStorage.heroLevel ? localStorage.heroLevel : 1,
     }),
     actions: {
         increment () {
@@ -13,6 +13,8 @@ export const useCounterStore = defineStore("counter",  {
             } else {
                 this.count--
             }
+            localStorage.count = this.count
+            localStorage.heroLevel = this.heroLevel
         }
-    }
+    },
 })
