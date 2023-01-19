@@ -14,8 +14,8 @@ import SupportIcon from './icons/IconSupport.vue'
     </template>
     <template #heading>Ataque</template>
 
-    Basta clicar no inimigo e {{ heroName }} seu heroi irá atacar.<br>
-    Ataque: {{ heroAttack }} 1
+    Basta clicar no inimigo para atacar.<br>
+    Ataque: 2
   </WelcomeItem>
 
   <WelcomeItem>

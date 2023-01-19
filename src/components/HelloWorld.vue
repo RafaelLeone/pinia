@@ -10,7 +10,7 @@
       <div class="enemy1">
         <img class="enemy" src="@/assets/redShadow.png" width="240" type="button" @click="increment">
         <div class="enemyHP">Shadow</div>
-        <div class="enemyHP">Pontos de vida: 1</div>
+        <div class="enemyHP">Pontos de vida: 2</div>
       </div>
     </div>
   </div>
