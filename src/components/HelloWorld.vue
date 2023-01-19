@@ -2,13 +2,13 @@
   <div class="greetings">
     <div class="characters">
       <div class="hero1">
-        <img class="hero" src="../assets/redSora1.png" width="240">
+        <img class="hero" src="@/assets/redSora1.png" width="240">
         <div class="heroXP">Sora {{ heroName }} (nível {{ heroLevel }})</div>
         <div class="enemyHP">Pontos de vida: 20{{ heroHP }}</div>
         <div class="heroXP">Próximo nível: {{ count }}</div>
       </div>
       <div class="enemy1">
-        <img class="enemy" src="../assets/redShadow.png" width="240" type="button" @click="increment">
+        <img class="enemy" src="@/assets/redShadow.png" width="240" type="button" @click="increment">
         <div class="enemyHP">Shadow {{ enemyName }} {{ enemyLevel }}</div>
         <div class="enemyHP">Pontos de vida: 1{{ enemyHP }}</div>
       </div>
@@ -18,7 +18,7 @@
 
 <script setup>
 import { mapActions, storeToRefs } from 'pinia';
-import { useCounterStore } from '../stores/counter';
+import { useCounterStore } from '@/stores/counter';
 
 
 const counter = useCounterStore()
